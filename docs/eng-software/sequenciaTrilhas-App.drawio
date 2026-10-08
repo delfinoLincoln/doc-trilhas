@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="sequence-v2" name="Sequência - Conclusão e transação">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="2460" pageHeight="2470">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s1" value="Trilhas App — Diagrama de sequência" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=28;fontStyle=1;fillColor=none;strokeColor=none;align=center;">
+          <mxGeometry as="geometry" x="30" y="20" width="2400" height="48" />
+        </mxCell>
+        <mxCell id="s2" value="Conclusão de conteúdo • transação, idempotência e notificação de conquista" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=18;fontStyle=0;fillColor=none;strokeColor=none;align=center;">
+          <mxGeometry as="geometry" x="30" y="73" width="2400" height="32" />
+        </mxCell>
+        <mxCell id="s3" value="Azul/cinza: código atual. Laranja «proposto»: xpAwarded e evento TrailCompleted ainda não implementados." vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=0;fillColor=none;strokeColor=none;align=center;">
+          <mxGeometry as="geometry" x="30" y="110" width="2400" height="30" />
+        </mxCell>
+        <mxCell id="s4" value="Aluno" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=#EAF3F8;strokeColor=#5B9BD5;align=center;rounded=1;">
+          <mxGeometry as="geometry" x="5" y="165" width="290" height="76" />
+        </mxCell>
+        <mxCell id="s5" value="" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#94A3B8;strokeColor=#94A3B8;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=none;endFill=1;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="150" y="241" />
+            <mxPoint as="targetPoint" x="150" y="2270" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s6" value="Frontend&#10;TrilhaDetalhePage" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=#EAF3F8;strokeColor=#5B9BD5;align=center;rounded=1;">
+          <mxGeometry as="geometry" x="355" y="165" width="290" height="76" />
+        </mxCell>
+        <mxCell id="s7" value="" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#94A3B8;strokeColor=#94A3B8;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=none;endFill=1;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="500" y="241" />
+            <mxPoint as="targetPoint" x="500" y="2270" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s8" value="API&#10;ProgressController" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=#EAF3F8;strokeColor=#5B9BD5;align=center;rounded=1;">
+          <mxGeometry as="geometry" x="705" y="165" width="290" height="76" />
+        </mxCell>
+        <mxCell id="s9" value="" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#94A3B8;strokeColor=#94A3B8;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=none;endFill=1;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="850" y="241" />
+            <mxPoint as="targetPoint" x="850" y="2270" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s10" value="ContentProgressService&#10;@Transactional" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=#EAF3F8;strokeColor=#5B9BD5;align=center;rounded=1;">
+          <mxGeometry as="geometry" x="1055" y="165" width="290" height="76" />
+        </mxCell>
+        <mxCell id="s11" value="" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#94A3B8;strokeColor=#94A3B8;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=none;endFill=1;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1200" y="241" />
+            <mxPoint as="targetPoint" x="1200" y="2270" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s12" value="GamificationService" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=#EAF3F8;strokeColor=#5B9BD5;align=center;rounded=1;">
+          <mxGeometry as="geometry" x="1405" y="165" width="290" height="76" />
+        </mxCell>
+        <mxCell id="s13" value="" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#94A3B8;strokeColor=#94A3B8;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=none;endFill=1;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1550" y="241" />
+            <mxPoint as="targetPoint" x="1550" y="2270" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s14" value="TrailProgressService" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=#EAF3F8;strokeColor=#5B9BD5;align=center;rounded=1;">
+          <mxGeometry as="geometry" x="1755" y="165" width="290" height="76" />
+        </mxCell>
+        <mxCell id="s15" value="" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#94A3B8;strokeColor=#94A3B8;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=none;endFill=1;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1900" y="241" />
+            <mxPoint as="targetPoint" x="1900" y="2270" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s16" value="Persistência&#10;Repositories / MySQL" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=#EAF3F8;strokeColor=#5B9BD5;align=center;rounded=1;">
+          <mxGeometry as="geometry" x="2145" y="165" width="290" height="76" />
+        </mxCell>
+        <mxCell id="s17" value="" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#94A3B8;strokeColor=#94A3B8;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=none;endFill=1;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="2290" y="241" />
+            <mxPoint as="targetPoint" x="2290" y="2270" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s18" value="1. Solicitar conclusão" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="150" y="300" />
+            <mxPoint as="targetPoint" x="500" y="300" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s19" value="2. POST /progress/students/{studentId}/&#10;contents/{contentId}/complete" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="500" y="390" />
+            <mxPoint as="targetPoint" x="850" y="390" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s20" value="3. markAsCompleted&#10;(studentId, contentId)" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="850" y="475" />
+            <mxPoint as="targetPoint" x="1200" y="475" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s21" value="Transação única: conclusão + XP + progresso&#10;BEGIN na entrada do serviço; COMMIT antes do retorno HTTP" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=#EAF3F8;strokeColor=#5B9BD5;align=center;">
+          <mxGeometry as="geometry" x="1110" y="515" width="1280" height="55" />
+        </mxCell>
+        <mxCell id="s22" value="4. BEGIN • buscar aluno com lock, conteúdo e progresso" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1200" y="610" />
+            <mxPoint as="targetPoint" x="2290" y="610" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s23" value="5. Aluno, conteúdo e progresso existente" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=open;endFill=0;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="2290" y="685" />
+            <mxPoint as="targetPoint" x="1200" y="685" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s24" value="" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=0;fillColor=none;strokeColor=#64748B;align=center;">
+          <mxGeometry as="geometry" x="340" y="730" width="2070" height="1400" />
+        </mxCell>
+        <mxCell id="s25" value="alt" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=left;">
+          <mxGeometry as="geometry" x="350" y="738" width="1150" height="32" />
+        </mxCell>
+        <mxCell id="s26" value="[conteúdo já concluído]" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=left;">
+          <mxGeometry as="geometry" x="355" y="772" width="600" height="30" />
+        </mxCell>
+        <mxCell id="s27" value="6a. Encerrar transação sem novas concessões de XP" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1200" y="855" />
+            <mxPoint as="targetPoint" x="2290" y="855" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s28" value="7a. Progresso existente&#10;«proposto» xpAwarded = 0" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#B45309;strokeColor=#B45309;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=open;endFill=0;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1200" y="935" />
+            <mxPoint as="targetPoint" x="850" y="935" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s29" value="8a. 200 OK • completed = true&#10;«proposto» xpAwarded = 0" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#B45309;strokeColor=#B45309;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=open;endFill=0;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="850" y="1015" />
+            <mxPoint as="targetPoint" x="500" y="1015" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s30" value="" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=none;endFill=1;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="340" y="1040" />
+            <mxPoint as="targetPoint" x="2410" y="1040" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s31" value="[conteúdo ainda não concluído]" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=left;">
+          <mxGeometry as="geometry" x="355" y="1055" width="650" height="30" />
+        </mxCell>
+        <mxCell id="s32" value="6b. Salvar ContentProgress (completed = true, completedAt)" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1200" y="1135" />
+            <mxPoint as="targetPoint" x="2290" y="1135" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s33" value="7b. addXp(studentId, 50)" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1200" y="1215" />
+            <mxPoint as="targetPoint" x="1550" y="1215" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s34" value="8b. Salvar XP/nível/XP semanal;&#10;verificar conquistas por XP acumulado" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1550" y="1295" />
+            <mxPoint as="targetPoint" x="2290" y="1295" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s35" value="9b. updateTrailProgress(studentId, trailId)" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1200" y="1385" />
+            <mxPoint as="targetPoint" x="1900" y="1385" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s36" value="10b. Obter/criar progresso;&#10;contar conteúdos e conclusões" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1900" y="1465" />
+            <mxPoint as="targetPoint" x="2290" y="1465" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s37" value="" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=0;fillColor=none;strokeColor=#70AD47;align=center;">
+          <mxGeometry as="geometry" x="1445" y="1510" width="950" height="210" />
+        </mxCell>
+        <mxCell id="s38" value="opt [percentual ≥ 100 e trilha ainda não concluída]" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=left;">
+          <mxGeometry as="geometry" x="1455" y="1518" width="930" height="32" />
+        </mxCell>
+        <mxCell id="s39" value="11b. Marcar trilha concluída;&#10;addXp(studentId, 500)" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1900" y="1605" />
+            <mxPoint as="targetPoint" x="1550" y="1605" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s40" value="12b. Persistir bônus de 500 XP&#10;e atualizar gamificação" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1550" y="1690" />
+            <mxPoint as="targetPoint" x="2290" y="1690" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s41" value="13b. Salvar estado e percentual da trilha" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1900" y="1780" />
+            <mxPoint as="targetPoint" x="2290" y="1780" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s42" value="14b. COMMIT único: conteúdo + XP + trilha" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=block;endFill=1;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1200" y="1865" />
+            <mxPoint as="targetPoint" x="2290" y="1865" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s43" value="15b. Resultado após COMMIT&#10;«proposto» evento opcional" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#B45309;strokeColor=#B45309;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=open;endFill=0;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1200" y="1980" />
+            <mxPoint as="targetPoint" x="850" y="1980" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s44" value="16b. 200 OK • resultado&#10;«proposto» evento opcional" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#B45309;strokeColor=#B45309;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=open;endFill=0;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="850" y="2110" />
+            <mxPoint as="targetPoint" x="500" y="2110" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s45" value="17. Atualizar tela e caches" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#334155;strokeColor=#334155;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=open;endFill=0;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="500" y="2190" />
+            <mxPoint as="targetPoint" x="150" y="2190" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s46" value="" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=0;fillColor=none;strokeColor=#B45309;align=center;">
+          <mxGeometry as="geometry" x="30" y="2220" width="1000" height="90" />
+        </mxCell>
+        <mxCell id="s47" value="opt «proposto» [resposta contém TrailCompleted]" vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;align=left;">
+          <mxGeometry as="geometry" x="40" y="2228" width="980" height="32" />
+        </mxCell>
+        <mxCell id="s48" value="18. Exibir pop-up de conquista" edge="1" parent="1" style="html=0;fontSize=16;fontColor=#B45309;strokeColor=#B45309;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;spacingBottom=8;endArrow=open;endFill=0;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="500" y="2290" />
+            <mxPoint as="targetPoint" x="150" y="2290" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s49" value="ContentProgressService é o nome real do serviço (não há UserProgressService).&#10;@Transactional já está presente. Exceções que causam rollback não produzem sucesso nem evento.&#10;Chamadas duplicadas: 200 OK, sem novo XP/evento; concluir a ação no cliente, sem repetir a requisição." vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=0;fillColor=#EAF3F8;strokeColor=#5B9BD5;align=left;">
+          <mxGeometry as="geometry" x="40" y="2330" width="1450" height="105" />
+        </mxCell>
+        <mxCell id="s50" value="Contrato proposto: xpAwarded = XP concedido nesta requisição&#10;(0 na duplicada; não é o saldo total do aluno).&#10;TrailCompleted sinaliza celebração; não cria badge por si só.&#10;O fluxo de evento refere-se apenas ao ramo de nova conclusão." vertex="1" parent="1" style="html=0;whiteSpace=wrap;fontSize=16;fontStyle=0;fillColor=#FFF2CC;strokeColor=#D6B656;align=left;">
+          <mxGeometry as="geometry" x="1520" y="2330" width="900" height="105" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

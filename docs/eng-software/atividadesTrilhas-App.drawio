@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="trilhas-Atividades - Percurso do aluno" name="Atividades - Percurso do aluno">
+    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1870" pageHeight="2460" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Trilhas App — Diagrama de atividades" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontColor=#17365D;fontSize=26;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="1810" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" value="Percurso do aluno: acessar uma trilha e concluir conteúdos" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontColor=#17365D;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="30" y="65" width="1810" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aluno" value="Aluno" style="swimlane;horizontal=1;startSize=45;html=0;fillColor=#F8FAFC;swimlaneFillColor=#FFFFFF;strokeColor=#CBD5E1;fontColor=#17365D;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="125" width="480" height="2180" as="geometry" />
+        </mxCell>
+        <mxCell id="app" value="Aplicativo" style="swimlane;horizontal=1;startSize=45;html=0;fillColor=#F8FAFC;swimlaneFillColor=#FFFFFF;strokeColor=#CBD5E1;fontColor=#17365D;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="125" width="480" height="2180" as="geometry" />
+        </mxCell>
+        <mxCell id="backend" value="Backend" style="swimlane;horizontal=1;startSize=45;html=0;fillColor=#F8FAFC;swimlaneFillColor=#FFFFFF;strokeColor=#CBD5E1;fontColor=#17365D;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="125" width="840" height="2180" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="" style="ellipse;fillColor=#17365D;strokeColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="253" y="190" width="34" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="choose" value="Selecionar uma trilha" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="80" y="255" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="load" value="Carregar trilha, módulos,&#10;conteúdos e progresso" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="560" y="350" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="loaded" value="Carregamento&#10;concluído?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="635" y="455" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="error" value="Exibir falha e opção&#10;de tentar novamente" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="80" y="475" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="show" value="Exibir conteúdos ordenados&#10;e conclusões existentes" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="560" y="615" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="study" value="Abrir material e estudar" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="80" y="710" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="click" value="Solicitar conclusão do conteúdo" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="80" y="815" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="request" value="Enviar solicitação autenticada&#10;Bloquear cliques repetidos" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="560" y="920" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" value="Validar autenticação e&#10;propriedade do perfil" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="920" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="allowed" value="Acesso permitido?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="1020" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="denied" value="Exibir erro de acesso" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1040" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lookup" value="Buscar aluno com lock,&#10;conteúdo e progresso" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="1150" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="done" value="Conteúdo já&#10;concluído?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="1250" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="existing" value="Retornar conclusão existente&#10;sem conceder novo XP" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="1265" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="save" value="Registrar conclusão e data/hora&#10;Conceder 50 XP; atualizar gamificação" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="1385" width="380" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="percent" value="Recalcular progresso da trilha" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="1500" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="full" value="Atingiu 100% pela&#10;primeira vez?" style="rhombus;whiteSpace=wrap;html=0;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="1605" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bonus" value="Marcar trilha concluída&#10;Conceder bônus de 500 XP&#10;Atualizar gamificação" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="1620" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="persist" value="Salvar progresso no banco&#10;Confirmar transação (COMMIT)&#10;Retornar confirmação ao app" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="1800" width="340" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="refresh" value="Marcar conclusão na tela, invalidar&#10;caches de progresso/XP e avisar aluno" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;fontColor=#17365D;" vertex="1" parent="1">
+          <mxGeometry x="560" y="2080" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="finish" value="" style="ellipse;shape=doubleEllipse;fillColor=#17365D;strokeColor=#17365D;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="253" y="2250" width="34" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" source="start" target="choose" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" source="choose" target="load" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" source="load" target="loaded" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="[não]" source="loaded" target="error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="Tentar novamente" source="error" target="load" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="505" />
+              <mxPoint x="60" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="[sim]" source="loaded" target="show" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="" source="show" target="study" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="" source="study" target="click" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="" source="click" target="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="" source="request" target="auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="" source="auth" target="allowed" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="[não]" source="allowed" target="denied" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="" source="denied" target="finish" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="1120" />
+              <mxPoint x="530" y="2267" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="[sim]" source="allowed" target="lookup" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" value="" source="lookup" target="done" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="[sim]" source="done" target="existing" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="HTTP 200 OK • sem novo XP" source="existing" target="refresh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1800" y="1305" />
+              <mxPoint x="1800" y="2120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" value="[não]" source="done" target="save" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" value="" source="save" target="percent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" value="" source="percent" target="full" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" value="[sim]" source="full" target="bonus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" value="[não]" source="full" target="persist" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" value="" source="bonus" target="persistBonus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" value="" source="persist" target="refresh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" value="" source="refresh" target="popup" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeColor=#334155;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="Azul: comportamento existente. Amarelo com «proposto»: extensão ainda não implementada.&#10;ContentProgressService.markAsCompleted usa @Transactional: conclusão, XP e progresso são atômicos.&#10;O evento de trilha concluída não equivale a uma badge já cadastrada: badges atuais são verificadas por XP acumulado." style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontColor=#17365D;fontSize=13;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2340" width="1800" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="persistBonus" value="Persistir 500 XP de bônus&#10;e estado concluído da trilha&#10;COMMIT da mesma transação" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#EAF3F8;strokeColor=#5B9BD5;">
+          <mxGeometry as="geometry" x="1450" y="1760" width="320" height="100" />
+        </mxCell>
+        <mxCell id="event" value="«proposto» Após COMMIT:&#10;emitir TrailCompleted&#10;para sinalizar conquista/troféu" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#FFF2CC;strokeColor=#D6B656;">
+          <mxGeometry as="geometry" x="1450" y="1930" width="320" height="100" />
+        </mxCell>
+        <mxCell id="popup" value="«proposto» Se receber TrailCompleted:&#10;exibir pop-up de conquista/troféu&#10;Sem novo evento em chamada duplicada" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fontSize=14;fillColor=#FFF2CC;strokeColor=#D6B656;">
+          <mxGeometry as="geometry" x="560" y="2200" width="380" height="85" />
+        </mxCell>
+        <mxCell id="e26" source="persistBonus" target="event" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e27" source="event" target="refresh" value="Confirmação + evento proposto" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e28" source="popup" target="finish" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1870" height="2460" viewBox="0 0 1870 2460" role="img" aria-labelledby="title description">
+<title id="title">Trilhas App — Diagrama de atividades</title>
+<desc id="description">Percurso do aluno, do acesso à trilha à conclusão de conteúdos, com raias de Aluno, Aplicativo e Backend. Azul indica comportamento existente; amarelo com «proposto» indica extensões ainda não implementadas. Fonte: atividadesTrilhas-App.drawio.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#334155"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g id="node-aluno"><rect x="30" y="125" width="480" height="2180" fill="white" stroke="#CBD5E1"/><rect x="30" y="125" width="480" height="45" fill="#F8FAFC" stroke="#CBD5E1"/>
+<text x="270" y="147.5" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#17365D" text-anchor="middle" dominant-baseline="central">Aluno</text>
+</g>
+<g id="node-app"><rect x="510" y="125" width="480" height="2180" fill="white" stroke="#CBD5E1"/><rect x="510" y="125" width="480" height="45" fill="#F8FAFC" stroke="#CBD5E1"/>
+<text x="750" y="147.5" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#17365D" text-anchor="middle" dominant-baseline="central">Aplicativo</text>
+</g>
+<g id="node-backend"><rect x="990" y="125" width="840" height="2180" fill="white" stroke="#CBD5E1"/><rect x="990" y="125" width="840" height="45" fill="#F8FAFC" stroke="#CBD5E1"/>
+<text x="1410" y="147.5" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#17365D" text-anchor="middle" dominant-baseline="central">Backend</text>
+</g>
+<g id="edge-e1" data-source="start" data-target="choose"><path d="M 270 224 L 270 255" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e2" data-source="choose" data-target="load"><path d="M 270 315 L 270 332 L 750 332 L 750 350" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e3" data-source="load" data-target="loaded"><path d="M 750 410 L 750 455" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e4" data-source="loaded" data-target="error"><path d="M 635 505 L 460 505" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="547" y="493" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">[não]</text>
+</g>
+<g id="edge-e5" data-source="error" data-target="load"><path d="M 80 505 L 60 505 L 60 380 L 560 380" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="285" y="366" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">Tentar novamente</text>
+</g>
+<g id="edge-e6" data-source="loaded" data-target="show"><path d="M 750 555 L 750 615" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="778" y="583" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">[sim]</text>
+</g>
+<g id="edge-e7" data-source="show" data-target="study"><path d="M 750 675 L 750 692 L 270 692 L 270 710" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e8" data-source="study" data-target="click"><path d="M 270 770 L 270 815" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e9" data-source="click" data-target="request"><path d="M 270 875 L 270 898 L 750 898 L 750 920" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e10" data-source="request" data-target="auth"><path d="M 940 950 L 1040 950" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e11" data-source="auth" data-target="allowed"><path d="M 1230 980 L 1230 1020" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e12" data-source="allowed" data-target="denied"><path d="M 1115 1070 L 940 1070" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1025" y="1057" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">[não]</text>
+</g>
+<g id="edge-e13" data-source="denied" data-target="finish"><path d="M 560 1070 L 530 1070 L 530 2267 L 287 2267" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e14" data-source="allowed" data-target="lookup"><path d="M 1230 1120 L 1230 1150" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1258" y="1135" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">[sim]</text>
+</g>
+<g id="edge-e15" data-source="lookup" data-target="done"><path d="M 1230 1210 L 1230 1250" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e16" data-source="done" data-target="existing"><path d="M 1345 1300 L 1390 1300 L 1390 1305 L 1450 1305" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1395" y="1285" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">[sim]</text>
+</g>
+<g id="edge-e17" data-source="existing" data-target="refresh"><path d="M 1770 1305 L 1800 1305 L 1800 2120 L 940 2120" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1460" y="2138" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">HTTP 200 OK • sem novo XP</text>
+</g>
+<g id="edge-e18" data-source="done" data-target="save"><path d="M 1230 1350 L 1230 1385" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1260" y="1367" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">[não]</text>
+</g>
+<g id="edge-e19" data-source="save" data-target="percent"><path d="M 1230 1455 L 1230 1500" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e20" data-source="percent" data-target="full"><path d="M 1230 1560 L 1230 1605" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e21" data-source="full" data-target="bonus"><path d="M 1345 1655 L 1390 1655 L 1390 1660 L 1450 1660" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1395" y="1640" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">[sim]</text>
+</g>
+<g id="edge-e22" data-source="full" data-target="persist"><path d="M 1230 1705 L 1230 1750 L 1210 1750 L 1210 1800" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1260" y="1732" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">[não]</text>
+</g>
+<g id="edge-e23" data-source="bonus" data-target="persistBonus"><path d="M 1610 1700 L 1610 1760" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e24" data-source="persist" data-target="refresh"><path d="M 1210 1890 L 1210 2010 L 650 2010 L 650 2080" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e25" data-source="refresh" data-target="popup"><path d="M 750 2160 L 750 2200" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e26" data-source="persistBonus" data-target="event"><path d="M 1610 1860 L 1610 1930" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="edge-e27" data-source="event" data-target="refresh"><path d="M 1610 2030 L 1610 2055 L 850 2055 L 850 2080" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1220" y="2043" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#334155" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">Confirmação + evento proposto</text>
+</g>
+<g id="edge-e28" data-source="popup" data-target="finish"><path d="M 560 2242.5 L 490 2242.5 L 490 2220 L 270 2220 L 270 2250" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+</g>
+<g id="node-title">
+<text x="935" y="40" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#17365D" text-anchor="middle" dominant-baseline="central">Trilhas App — Diagrama de atividades</text>
+</g>
+<g id="node-sub">
+<text x="935" y="80" font-family="Arial,sans-serif" font-size="17" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Percurso do aluno: acessar uma trilha e concluir conteúdos</text>
+</g>
+<g id="node-start">
+<ellipse cx="270" cy="207" rx="17" ry="17" fill="#17365D" stroke="#17365D"/>
+</g>
+<g id="node-choose">
+<rect x="80" y="255" width="380" height="60" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="270" y="285" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Selecionar uma trilha</text>
+</g>
+<g id="node-load">
+<rect x="560" y="350" width="380" height="60" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="750" y="370.2" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Carregar trilha, módulos,</text>
+<text x="750" y="389.8" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">conteúdos e progresso</text>
+</g>
+<g id="node-loaded">
+<polygon points="750,455 865,505 750,555 635,505" fill="#FFF2CC" stroke="#D6B656"/>
+<text x="750" y="495.2" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Carregamento</text>
+<text x="750" y="514.8" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">concluído?</text>
+</g>
+<g id="node-error">
+<rect x="80" y="475" width="380" height="60" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="270" y="495.2" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Exibir falha e opção</text>
+<text x="270" y="514.8" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">de tentar novamente</text>
+</g>
+<g id="node-show">
+<rect x="560" y="615" width="380" height="60" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="750" y="635.2" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Exibir conteúdos ordenados</text>
+<text x="750" y="654.8" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">e conclusões existentes</text>
+</g>
+<g id="node-study">
+<rect x="80" y="710" width="380" height="60" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="270" y="740" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Abrir material e estudar</text>
+</g>
+<g id="node-click">
+<rect x="80" y="815" width="380" height="60" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="270" y="845" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Solicitar conclusão do conteúdo</text>
+</g>
+<g id="node-request">
+<rect x="560" y="920" width="380" height="60" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="750" y="940.2" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Enviar solicitação autenticada</text>
+<text x="750" y="959.8" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Bloquear cliques repetidos</text>
+</g>
+<g id="node-auth">
+<rect x="1040" y="920" width="380" height="60" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="1230" y="940.2" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Validar autenticação e</text>
+<text x="1230" y="959.8" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">propriedade do perfil</text>
+</g>
+<g id="node-allowed">
+<polygon points="1230,1020 1345,1070 1230,1120 1115,1070" fill="#FFF2CC" stroke="#D6B656"/>
+<text x="1230" y="1070" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Acesso permitido?</text>
+</g>
+<g id="node-denied">
+<rect x="560" y="1040" width="380" height="60" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="750" y="1070" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Exibir erro de acesso</text>
+</g>
+<g id="node-lookup">
+<rect x="1040" y="1150" width="380" height="60" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="1230" y="1170.2" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Buscar aluno com lock,</text>
+<text x="1230" y="1189.8" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">conteúdo e progresso</text>
+</g>
+<g id="node-done">
+<polygon points="1230,1250 1345,1300 1230,1350 1115,1300" fill="#FFF2CC" stroke="#D6B656"/>
+<text x="1230" y="1290.2" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Conteúdo já</text>
+<text x="1230" y="1309.8" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">concluído?</text>
+</g>
+<g id="node-existing">
+<rect x="1450" y="1265" width="320" height="80" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="1610" y="1295.2" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Retornar conclusão existente</text>
+<text x="1610" y="1314.8" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">sem conceder novo XP</text>
+</g>
+<g id="node-save">
+<rect x="1040" y="1385" width="380" height="70" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="1230" y="1410.2" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Registrar conclusão e data/hora</text>
+<text x="1230" y="1429.8" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Conceder 50 XP; atualizar gamificação</text>
+</g>
+<g id="node-percent">
+<rect x="1040" y="1500" width="380" height="60" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="1230" y="1530" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Recalcular progresso da trilha</text>
+</g>
+<g id="node-full">
+<polygon points="1230,1605 1345,1655 1230,1705 1115,1655" fill="#FFF2CC" stroke="#D6B656"/>
+<text x="1230" y="1645.2" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Atingiu 100% pela</text>
+<text x="1230" y="1664.8" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">primeira vez?</text>
+</g>
+<g id="node-bonus">
+<rect x="1450" y="1620" width="320" height="80" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="1610" y="1640.4" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Marcar trilha concluída</text>
+<text x="1610" y="1660" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Conceder bônus de 500 XP</text>
+<text x="1610" y="1679.6" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Atualizar gamificação</text>
+</g>
+<g id="node-persist">
+<rect x="1040" y="1800" width="340" height="90" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="1210" y="1825.4" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Salvar progresso no banco</text>
+<text x="1210" y="1845" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Confirmar transação (COMMIT)</text>
+<text x="1210" y="1864.6" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Retornar confirmação ao app</text>
+</g>
+<g id="node-refresh">
+<rect x="560" y="2080" width="380" height="80" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="750" y="2110.2" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Marcar conclusão na tela, invalidar</text>
+<text x="750" y="2129.8" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">caches de progresso/XP e avisar aluno</text>
+</g>
+<g id="node-finish">
+<ellipse cx="270" cy="2267" rx="17" ry="17" fill="#17365D" stroke="#17365D"/>
+<ellipse cx="270" cy="2267" rx="12" ry="12" fill="none" stroke="white" stroke-width="2"/>
+</g>
+<g id="node-note">
+<text x="45" y="2366.8" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#17365D" text-anchor="start" dominant-baseline="central">Azul: comportamento existente. Amarelo com «proposto»: extensão ainda não implementada.</text>
+<text x="45" y="2385" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#17365D" text-anchor="start" dominant-baseline="central">ContentProgressService.markAsCompleted usa @Transactional: conclusão, XP e progresso são atômicos.</text>
+<text x="45" y="2403.2" font-family="Arial,sans-serif" font-size="13" font-weight="normal" fill="#17365D" text-anchor="start" dominant-baseline="central">O evento de trilha concluída não equivale a uma badge já cadastrada: badges atuais são verificadas por XP acumulado.</text>
+</g>
+<g id="node-persistBonus">
+<rect x="1450" y="1760" width="320" height="100" rx="10" fill="#EAF3F8" stroke="#5B9BD5"/>
+<text x="1610" y="1790.4" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Persistir 500 XP de bônus</text>
+<text x="1610" y="1810" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">e estado concluído da trilha</text>
+<text x="1610" y="1829.6" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">COMMIT da mesma transação</text>
+</g>
+<g id="node-event">
+<rect x="1450" y="1930" width="320" height="100" rx="10" fill="#FFF2CC" stroke="#D6B656"/>
+<text x="1610" y="1960.4" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">«proposto» Após COMMIT:</text>
+<text x="1610" y="1980" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">emitir TrailCompleted</text>
+<text x="1610" y="1999.6" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">para sinalizar conquista/troféu</text>
+</g>
+<g id="node-popup">
+<rect x="560" y="2200" width="380" height="85" rx="10" fill="#FFF2CC" stroke="#D6B656"/>
+<text x="750" y="2222.9" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">«proposto» Se receber TrailCompleted:</text>
+<text x="750" y="2242.5" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">exibir pop-up de conquista/troféu</text>
+<text x="750" y="2262.1" font-family="Arial,sans-serif" font-size="14" font-weight="normal" fill="#17365D" text-anchor="middle" dominant-baseline="central">Sem novo evento em chamada duplicada</text>
+</g>
+</svg>
