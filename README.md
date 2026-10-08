@@ -8,6 +8,7 @@ Este repositório contém toda a documentação técnica, modelagem de banco de 
 
 ```text
 .
+<<<<<<< HEAD
 ├── banco-dados/               # Modelos e imagens PNG históricos
 └── docs/
     ├── arquitetura/           # Documentação de arquitetura e gamificação
@@ -46,3 +47,13 @@ As imagens em SVG podem ser ampliadas sem perda de qualidade. Os arquivos Draw.i
 ## Diagramas de banco de dados
 
 O [documento de arquitetura do banco de dados](docs/arquitetura/ARQUITETURA_BANCO_DE_DADOS.md#diagramas-do-projeto) apresenta as imagens vetoriais do MER e do DER, com links para os modelos editáveis e observações sobre a modelagem histórica.
+=======
+├── banco-dados/
+│   ├── modelo-conceitual/      # Arquivos e imagens do MER (brModelo)
+│   ├── modelo-logico/         # Arquivos e imagens do DER (MySQL Workbench)
+│   └── scripts/                # Scripts SQL (DDL e DML de testes)
+│
+├── eng-software/
+│   ├── casos-de-uso/           # Diagrama de Casos de Uso e documentação
+│   ├── classes/                # Diagrama de Classes
+>>>>>>> bb24ef25dac29fc601e461b86deaf6af7c0d3281
